@@ -23,7 +23,7 @@ export default function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-[#FAFAFA]" ref={props.homeRef}>
+    <div className="" ref={props.homeRef}>
       {/* Navbar */}
       <section className="w-screen">
         <nav className="fixed w-full top-0 left-0 bg-black/10 backdrop-blur-md z-50">
