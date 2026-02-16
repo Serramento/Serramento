@@ -1,6 +1,5 @@
 import React, { useRef, lazy, Suspense } from "react";
 import SERRAMENTO_LOGO from "../images/Serramento/SERRAMENTO_LOGO.png";
-import PrivateVideo from "../images/PrivateVideo.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
@@ -21,7 +20,6 @@ function EarthlightPrivateConcierge() {
     aboutUs: "ABOUT US",
     services: "PROJECTS",
     contact: "CONTACT",
-    video: PrivateVideo,
     videoText: "Travel Dreams Come True",
     contactInfo: "Contact Info",
     mailtoHref:

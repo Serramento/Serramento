@@ -26,7 +26,7 @@ export default function Header(props) {
     <div className="" ref={props.homeRef}>
       {/* Navbar */}
       <section className="w-screen">
-        <nav className="fixed w-full top-0 left-0 bg-black/10 backdrop-blur-md z-50">
+        <nav className="fixed w-full top-0 left-0 bg-white/10 backdrop-blur-md z-50">
           <div className="px-4 md:px-20">
             <div className="flex justify-between h-28">
               <div className="flex items-center">
