@@ -27,22 +27,22 @@ import FotoGuray from "../images/WhoWeAre/FotoGuray.png";
 
 const InstagramData = [
   {
-    title: "Swissotel The Bosphorus",
+    title: "Grozni Cami Mimari",
     description:
-      "Swissotel The Bosphorus, Istanbul is a five-star luxury hotel right in the centre of Istanbul on the European banks of the Bosphorus. Nestled within 65 acres of historical gardens with world-class shopping and vibrant nightlife nearby, it offers 566 guest rooms and suites, featuring state-of-the-art technology and exclusive amenities.",
-    href: "https://www.instagram.com/p/DC6QTwjg-0S/?img_index=1",
+      "Konsept Mimari Cami Projemiz...",
+    href: "https://www.instagram.com/p/B72zBStHXXY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
   {
-    title: "Istanbul, Turkiye",
+    title: "Ekincik Villa Mimari",
     description:
-      "Anchored on the European shores of the Bosphorus strait in a historical building from the 1930’s, Shangri-La Bosphorus sits in the Beşiktaş district and is only a 15 minute walk from the iconic Dolmabahçe Palace. Guests will find solace in chandelier-accented rooms and suites accentuated by soothing cool tones, inspired by palatial...",
-    href: "https://www.instagram.com/reel/DBGqTa5AMu9/",
+      "Mimari Konut Tasarımımız...",
+    href: "https://www.instagram.com/p/B7A7y1THROm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
   {
-    title: "Rixos Tersane Istanbul",
+    title: "İncesu Villa İç Mimari",
     description:
-      "Nestled along the Haliç, Rixos Tersane Istanbul epitomises unmatched guest experiences and service excellence. Dedicated to redefining Istanbul’s lifestyle scene, the hotel is an eclectic fusion, creating an urban hotspot and lifestyle hub with panoramic views of the Haliç. Situated in Istanbul’s historic Tersane district along the Golden Horn...",
-    href: "https://www.instagram.com/p/DAGe8iyoIJ0/?img_index=1",
+      "İç Mimari Konut Tasarımımız...",
+    href: "https://www.instagram.com/p/CQLKFXkHd-K/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
 ];
 

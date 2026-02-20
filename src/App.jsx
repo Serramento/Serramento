@@ -5,11 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 
-const DilarasPage = lazy(() => import("./pages/DilarasPage"));
 const SerramentoMainPage = lazy(() =>
   import("./pages/SerramentoMainPage")
 );
-const EarthlightMICE = lazy(() => import("./pages/EarthlightMICE"));
 
 function App() {
   return (
@@ -24,10 +22,6 @@ function App() {
       >
         <Routes>
           <Route exact path="/" element={<SerramentoMainPage />} />
-
-          <Route path="/dilarasRecomienda" element={<DilarasPage />} />
-
-          <Route path="/earthlightMice" element={<EarthlightMICE />} />
         </Routes>
       </Suspense>
     </div>
