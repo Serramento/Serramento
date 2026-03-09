@@ -1,26 +1,9 @@
-import { useState, Suspense } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import ImageSlider2 from "../components/ImageSlider2";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
-import INCESU from "../images/Serramento/INCESU.png";
-import ATAKUM from "../images/Serramento/ATAKUM.png";
 import { Link } from "react-router-dom";
 
-const ImageSliderData2 = [
-  {
-    title: "Incesu Summer House Project",
-    src: INCESU,
-    alt: "INCESU",
-  },
-  {
-    title: "Atakum Interior Housing Project",
-    src: ATAKUM,
-    alt: "ATAKUM",
-  }
-];
 
-export default function Header(props) {
+export default function Header2(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -49,6 +32,7 @@ export default function Header(props) {
                 <div>
                   <ul className="flex flex-row justify-between w-[28rem]">
                     <li>
+                      <Link to="/">
                       <button
                         onClick={() =>
                           window.scrollTo({
@@ -61,8 +45,10 @@ export default function Header(props) {
                           {props.info.home}
                         </div>
                       </button>
+                      </Link>
                     </li>
                     <li>
+                      <Link to="/">
                       <button
                         onClick={() =>
                           window.scrollTo({
@@ -75,6 +61,7 @@ export default function Header(props) {
                           {props.info.aboutUs}
                         </div>
                       </button>
+                      </Link>
                     </li>
                     <li>
                         <Link to="/projects" className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#FFFFFF] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
@@ -82,6 +69,7 @@ export default function Header(props) {
                         </Link>
                     </li>
                     <li>
+                      <Link to="/">
                       <button
                         onClick={() =>
                           window.scrollTo({
@@ -94,6 +82,7 @@ export default function Header(props) {
                           {props.info.contact}
                         </div>
                       </button>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -120,6 +109,7 @@ export default function Header(props) {
           {isOpen && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <Link to="/">
                 <button
                   className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"
                   onClick={() =>
@@ -131,6 +121,8 @@ export default function Header(props) {
                 >
                   {props.info.home}
                 </button>
+                </Link>
+                <Link to="/">
                 <button
                   className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"
                   onClick={() =>
@@ -142,11 +134,13 @@ export default function Header(props) {
                 >
                   {props.info.aboutUs}
                 </button>
+                </Link>
                 <Link to="/projects"
                   className="block px-3 py-2 rounded-md text-left font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"                  
                 >
                   {props.info.services}
                 </Link>
+                <Link to="/">
                 <button
                   className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"
                   onClick={() =>
@@ -158,24 +152,11 @@ export default function Header(props) {
                 >
                   {props.info.contact}
                 </button>
+                </Link>
               </div>
             </div>
           )}
         </nav>
-      </section>
-
-      {/* Carousel */}
-      <section className="relative w-screen h-screen md:h-[46rem]">
-                <Suspense
-                  fallback={
-                    <div className="bg-[#98B8DF] w-screen h-screen flex justify-center items-center text-[#FFFFFF] font-montserrat text-3xl">
-                      <FontAwesomeIcon icon={faSpinner} className="animate-spin mr-3" />
-                      Loading...
-                    </div>
-                  }
-                >
-                  <ImageSlider2 imageSlider={ImageSliderData2} />
-                </Suspense>
       </section>
     </div>
   );

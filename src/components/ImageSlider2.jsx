@@ -50,7 +50,7 @@ const ImageSlider2 = (props) => {
                 <img
                   src={slide.src}
                   alt={slide.alt}
-                  className="md:w-[80rem] md:h-[40rem] w-full h-full object-cover"
+                  className="md:w-[90rem] md:h-[40rem] w-full h-full object-cover"
                 />
               </div>
             )}

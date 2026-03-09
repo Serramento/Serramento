@@ -2,6 +2,8 @@ import React, { useRef, lazy, Suspense } from "react";
 import SERRAMENTO_LOGO from "../images/Serramento/SERRAMENTO_LOGO.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import Header2 from "../layout/Header2";
+import ImageSlider4 from "../components/ImageSlider4";
 
 const Header = lazy(() => import("../layout/Header"));
 const Footer = lazy(() => import("../layout/Footer"));
@@ -9,9 +11,10 @@ const PageSerramentoMain = lazy(() =>
   import("../layout/PageSerramentoMain")
 );
 
-function SerramentoMainPage() {
+function ProjectsPage() {
   const homeRef = useRef(null);
   const aboutUsRef = useRef(null);
+  const servicesRef = useRef(null);
   const contactRef = useRef(null);
   const info = {
     logo: SERRAMENTO_LOGO,
@@ -36,20 +39,20 @@ function SerramentoMainPage() {
           </div>
         }
       >
-        <Header
+        <Header2
           homeRef={homeRef}
           aboutUsRef={aboutUsRef}
+          servicesRef={servicesRef}
           contactRef={contactRef}
           info={info}
         />
-        <PageSerramentoMain
-          aboutUsRef={aboutUsRef}
-          contactRef={contactRef}
-        />
-        <Footer homeRef={homeRef} info={info} />
+      <section className="py-20 bg-[#FAFAFA] w-screen">
+        <ImageSlider4 />
+      </section>
+
       </Suspense>
     </div>
   );
 }
 
-export default SerramentoMainPage;
+export default ProjectsPage;

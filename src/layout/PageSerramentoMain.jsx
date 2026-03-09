@@ -67,7 +67,7 @@ const imageSliderData = [
   },
 ];
 
-export default function PageContentPrivateConcierge(props) {
+export default function PageSerramentoMain(props) {
   return (
     <div className="max-w-md md:max-w-7xl">
       {/* About Us */}
@@ -264,11 +264,6 @@ export default function PageContentPrivateConcierge(props) {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Comments */}
-      <section className="py-20 bg-[#FAFAFA] w-screen">
-        <ImageSlider4 />
       </section>
 
       {/* Contact Form */}

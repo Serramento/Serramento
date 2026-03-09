@@ -3,6 +3,7 @@ import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import ProjectsPage from "./pages/ProjectsPage";
 
 
 const SerramentoMainPage = lazy(() =>
@@ -22,6 +23,7 @@ function App() {
       >
         <Routes>
           <Route exact path="/" element={<SerramentoMainPage />} />
+          <Route exact path="/projects" element={<ProjectsPage />} />
         </Routes>
       </Suspense>
     </div>
