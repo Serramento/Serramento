@@ -64,20 +64,11 @@ const ImageSlider4 = () => {
   
 
   return (
-    <section className="flex justify-between items-center">
-      <div className="flex flex-col items-center justify-center md:items-start">
-        <h2 className="text-lg font-bold text-[#98B8DF] mb-3">
-          OUR HAPPY CLIENTS
-        </h2>
-        <div className="vertical-line2 mb-1 md:ml-20"></div>
-        <h2 className="text-5xl font-bold mx-5 mt-1 text-[#39405A] mb-12 md:w-64 md:mx-0 md:text-left">
-          Travelers Notes
-        </h2>
-      </div>
+    <section className="flex flex-wrap m-20 justify-between items-center">
 
-      {ImageSliderData4.map((slide) => {
+      {ImageSliderData4.map((slide, index) => {
         return (
-              <div className="flex flex-row md:ml-10">
+              <div key={index} className="flex flex-row mb-20 md:ml-10">
                 <div className="shadow-md sm:w-96 w-72 md:w-[20rem] bg-[#FAFAFA]">
                   <div className="h-48 md:h-64 relative">
                     <img

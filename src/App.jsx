@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import ProjectsPage from "./pages/ProjectsPage";
+import TheProjectPage from "./pages/TheProjectPage";
 
 
 const SerramentoMainPage = lazy(() =>
@@ -23,7 +24,8 @@ function App() {
       >
         <Routes>
           <Route exact path="/" element={<SerramentoMainPage />} />
-          <Route exact path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/:projectId" element={<TheProjectPage />}/>
         </Routes>
       </Suspense>
     </div>

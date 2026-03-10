@@ -1,11 +1,12 @@
-import React, { useRef, lazy, Suspense } from "react";
+import React, { useRef, Suspense } from "react";
 import SERRAMENTO_LOGO from "../images/Serramento/SERRAMENTO_LOGO.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import Header2 from "../layout/Header2";
-import ImageSlider4 from "../components/ImageSlider4";
+import ImageSlider2 from "../components/ImageSlider2";
+import { useParams } from "react-router-dom";
 
-function ProjectsPage() {
+function TheProjectPage() {
   const homeRef = useRef(null);
   const aboutUsRef = useRef(null);
   const servicesRef = useRef(null);
@@ -23,6 +24,7 @@ function ProjectsPage() {
     mail1: "info@earthlighttravel.com",
     turkiye: "TURKIYE",
   };
+  let { productId } = useParams();
   return (
     <div className="font-lato">
       <Suspense
@@ -41,7 +43,7 @@ function ProjectsPage() {
           info={info}
         />
       <section className="py-20 bg-[#FAFAFA] w-screen">
-        <ImageSlider4 />
+        <ImageSlider2 />
       </section>
 
       </Suspense>
@@ -49,4 +51,4 @@ function ProjectsPage() {
   );
 }
 
-export default ProjectsPage;
+export default TheProjectPage;

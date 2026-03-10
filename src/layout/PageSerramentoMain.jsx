@@ -16,7 +16,6 @@ import Kayan10 from "../images/KayanFotolar/Kayan10.jpeg";
 import Kayan11 from "../images/KayanFotolar/Kayan11.jpeg";
 import InstagramContent from "../components/InstagramContent";
 import ImageSlider from "../components/ImageSlider";
-import ImageSlider4 from "../components/ImageSlider4";
 import FamilyVacation from "../images/WhatWeOffer/FamilyVacation.jpeg";
 import ArtCulture from "../images/WhatWeOffer/ArtCulture.jpeg";
 import ConciergeServices from "../images/WhatWeOffer/ConciergeServices.jpeg";
