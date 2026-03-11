@@ -1,12 +1,9 @@
-import React, { useRef, Suspense } from "react";
+import React, { useRef } from "react";
 import SERRAMENTO_LOGO from "../images/Serramento/SERRAMENTO_LOGO.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import Header2 from "../layout/Header2";
-import ImageSlider2 from "../components/ImageSlider2";
-import { useParams } from "react-router-dom";
 
-function TheProjectPage() {
+function TheProjectPage(props) {
   const homeRef = useRef(null);
   const aboutUsRef = useRef(null);
   const servicesRef = useRef(null);
@@ -24,17 +21,36 @@ function TheProjectPage() {
     mail1: "info@earthlighttravel.com",
     turkiye: "TURKIYE",
   };
-  let { productId } = useParams();
+
+  const [current, setCurrent] = useState(0);
+    const length = props.imageSlider.length;
+  
+    const nextSlide = () => {
+      setCurrent(current === length - 1 ? 0 : current + 1);
+    };
+  
+    const prevSlide = () => {
+      setCurrent(current === 0 ? length - 1 : current - 1);
+    };
+  
+    if (!Array.isArray(props.imageSlider) || props.imageSlider.length <= 0) {
+      return null;
+    }
+  
+    const ArrowButton = ({ direction, handleClick }) => (
+      <FontAwesomeIcon
+        icon={direction === "left" ? faChevronLeft : faChevronRight}
+        className="text-[#FFFFFF] hover:text-[#737373] fa-3x opacity-50"
+        onClick={handleClick}
+      />
+    );
+
+    const { id } = useParams();
+
+    useEffect(() => { src }, [id]);
+
   return (
     <div className="font-lato">
-      <Suspense
-        fallback={
-          <div className="bg-[#98B8DF] w-screen h-screen flex justify-center items-center text-[#FFFFFF] font-montserrat text-3xl">
-            <FontAwesomeIcon icon={faSpinner} className="animate-spin mr-3" />
-            Loading...
-          </div>
-        }
-      >
         <Header2
           homeRef={homeRef}
           aboutUsRef={aboutUsRef}
@@ -42,11 +58,35 @@ function TheProjectPage() {
           contactRef={contactRef}
           info={info}
         />
-      <section className="py-20 bg-[#FAFAFA] w-screen">
-        <ImageSlider2 />
-      </section>
+      <section>
+      {props.imageSlider.map((project, id) => {
+        return (
+          <div key={id}>
+            {index === current && (
+              <div className="flex justify-center w-screen relative h-screen md:h-[46rem] index-0">
+                <div className="flex flex-col absolute sm:w-[23rem] w-[18rem] mt-24 md:w-[74rem] md:text-left md:mt-60 index-0">
+                  <div className="flex justify-between index-0">
+                    <ArrowButton direction="left" handleClick={prevSlide} />
+                    <ArrowButton direction="right" handleClick={nextSlide} />
+                  </div>
+                  <div>
+                    <h2 className="text-3xl text-[#FFFFFF] opacity-75 mt-24 md:text-4xl md:mt-48">
+                      {project.comment}
+                    </h2>
+                  </div>
+                </div>
+                <img
+                  src={project.src}
+                  alt={project.alt}
+                  className="md:w-[90rem] md:h-[40rem] w-full h-full object-cover"
+                />
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </section>
 
-      </Suspense>
     </div>
   );
 }

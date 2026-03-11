@@ -1,13 +1,6 @@
-import React, { useRef, lazy, Suspense } from "react";
+import React, { useRef } from "react";
 import SERRAMENTO_LOGO from "../images/Serramento/SERRAMENTO_LOGO.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
-const Header = lazy(() => import("../layout/Header"));
-const Footer = lazy(() => import("../layout/Footer"));
-const PageSerramentoMain = lazy(() =>
-  import("../layout/PageSerramentoMain")
-);
 
 function SerramentoMainPage() {
   const homeRef = useRef(null);
@@ -28,14 +21,6 @@ function SerramentoMainPage() {
   };
   return (
     <div className="font-lato">
-      <Suspense
-        fallback={
-          <div className="bg-[#98B8DF] w-screen h-screen flex justify-center items-center text-[#FFFFFF] font-montserrat text-3xl">
-            <FontAwesomeIcon icon={faSpinner} className="animate-spin mr-3" />
-            Loading...
-          </div>
-        }
-      >
         <Header
           homeRef={homeRef}
           aboutUsRef={aboutUsRef}
@@ -47,7 +32,6 @@ function SerramentoMainPage() {
           contactRef={contactRef}
         />
         <Footer homeRef={homeRef} info={info} />
-      </Suspense>
     </div>
   );
 }
