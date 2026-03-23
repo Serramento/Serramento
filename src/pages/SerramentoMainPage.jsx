@@ -1,5 +1,9 @@
 import React, { useRef } from "react";
 import SERRAMENTO_LOGO from "../images/Serramento/SERRAMENTO_LOGO.png";
+import Header from "../layout/Header";
+import PageSerramentoMain from "../layout/PageSerramentoMain";
+import Footer from "../layout/Footer";
+
 
 
 function SerramentoMainPage() {
