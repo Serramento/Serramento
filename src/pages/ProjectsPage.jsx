@@ -5,6 +5,7 @@ import Karakoy from "../images/Feedback/Karakoy.jpeg";
 import Arnavutkoy from "../images/Feedback/Arnavutkoy.jpeg";
 import Dolmabahce from "../images/Feedback/Dolmabahce.jpeg";
 import { Link } from "lucide-react";
+import TheProjectPage from "./TheProjectPage";
 
 const ProjectsData = [
   {
@@ -103,7 +104,7 @@ function ProjectsPage() {
 
       {ProjectsData.map((project) => {
         return (
-              <Link key={project.id} to={`/projects/${project.id}`} className="flex flex-row mb-20 md:ml-10">
+              <Link key={project.id} to={`/projects/${project.id}`} className="flex flex-row mb-20 md:ml-10" element={<TheProjectPage project={project}/>}>
                 <div className="shadow-md sm:w-96 w-72 md:w-[20rem] bg-[#FAFAFA]">
                   <div className="h-48 md:h-64 relative">
                     <img
