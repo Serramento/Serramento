@@ -162,7 +162,6 @@ export default function PageSerramentoMain(props) {
             <h5 className="text-lg font-bold pb-3 text-[#FFFFFF] pt-10">
               WHY CHOOSE US?
             </h5>
-            <div className="vertical-line4 mb-1"></div>
             <div className="text-md font-semibold md:mx-10 text-[#FFFFFF] md:mt-2 px-5 sm:px-8 pb-10 sm:pb-16 md:px-0 text-left">
               • Professional, dedicated and passionate travel advisors have an
               extensive background in luxury hotel industry
@@ -178,71 +177,11 @@ export default function PageSerramentoMain(props) {
         </div>
       </section>
 
-      {/* Who we are */}
-      <section className="py-20 bg-[#FAFAFA] w-screen">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h5 className="text-lg font-bold pb-3 text-[#98B8DF] md:text-left md:ml-[11rem]">
-              OUR FAMILY
-            </h5>
-            <div className="vertical-line2 mb-1 md:ml-56"></div>
-            <div>
-              <div className="flex flex-col mb-3 px-5 items-center justify-center md:flex-row md:mx-20">
-                <img
-                  src={FotoGuray}
-                  alt="Guray"
-                  className="w-60 rounded-full mb-5 md:mr-10"
-                />
-                <div>
-                  <h5 className="text-lg font-bold text-[#39405A] md:text-left">
-                    Güray Can
-                  </h5>
-                  <p className="text-lg text-[#39405A] md:text-left italic">
-                    Managing Partner
-                  </p>
-                  <p className="mt-3 text-md text-[#C0BABA] md:text-left">
-                    Güray has been part of the Travel industry for over 20 years
-                    and worked in wide range of luxury hotel groups including
-                    Kempinski,Shangri-La,Sofitel and Mandarin Oriental Hotel
-                    Group where he has built a wealth of knowledge about
-                    leisure,MICE and corporate sides of the industry.
-                  </p>
-                </div>
-              </div>
-              <div className="vertical-line2 mb-1 md:ml-56"></div>
-              <div className="flex flex-col items-center justify-center px-5 md:flex-row md:mx-20">
-                <img
-                  src={FotoMehmet}
-                  alt="Mehmet"
-                  className="w-60 rounded-full mb-5 md:mr-10"
-                />
-                <div>
-                  <h5 className="text-lg font-bold text-[#39405A] md:text-left">
-                    Mehmet Sarıhasan
-                  </h5>
-                  <p className="text-[#39405A] text-lg md:text-left italic">
-                    Managing Partner
-                  </p>
-                  <p className="mt-3 text-md text-[#C0BABA] md:text-left">
-                    Mehmet has been working in the travel industry almost 10
-                    years.He has worked in different positions in luxury hotel
-                    sales departments and lastly worked in Shangri-La Hotel
-                    Group where he has gained extensive experience about the
-                    luxury segment and MICE.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Instagram Posts */}
       <section className="py-20 flex w-screen">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-3">
             <h2 className="text-lg font-bold mb-3 text-[#98B8DF]">FOLLOW US</h2>
-            <div className="vertical-line2 mb-1"></div>
           </div>
           <div className="md:hidden flex flex-col items-center justify-center md:flex-row">
             {InstagramData.slice(0, 2).map((post, index) => (
@@ -274,7 +213,6 @@ export default function PageSerramentoMain(props) {
           <h2 className="text-lg font-bold text-[#98B8DF] -rotate-90">
             CONTACT US
           </h2>
-          <div className="vertical-line3 mt-16"></div>
         </div>
         <ContactForm2 />
         <h2 className="md:hidden mb-3 text-lg font-bold text-[#98B8DF]">

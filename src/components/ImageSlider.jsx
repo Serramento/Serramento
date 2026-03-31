@@ -46,7 +46,6 @@ const ImageSlider = (props) => {
                 </div>
                 <div className="w-72 mt-5 md:w-[26rem] md:mr-10 md:text-left md:mt-10">
                   <h5 className={props.css}>{props.title}</h5>
-                  <div className="vertical-line2 md:ml-20 mb-1"></div>
                   <div className={props.css2}>
                     <h2 className="text-3xl md:text-5xl font-bold text-[#39405A] italic">
                       {slide.title}

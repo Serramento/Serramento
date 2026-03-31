@@ -4,16 +4,20 @@ import Header2 from "../layout/Header2";
 import Karakoy from "../images/Feedback/Karakoy.jpeg";
 import Arnavutkoy from "../images/Feedback/Arnavutkoy.jpeg";
 import Dolmabahce from "../images/Feedback/Dolmabahce.jpeg";
-import { Link } from "lucide-react";
-import TheProjectPage from "./TheProjectPage";
+import { Link } from "react-router-dom";
 
-const ProjectsData = [
+export const ProjectsData = [
   {
     id:1,
     comment:
       "Excellent from everyone with whom i deal for my first experience with Earthlight Travel Services. Insightful, responsive, patient, professional & helpful. I highly recommend their services.",
     name: "Syafi Naz",
     src: Arnavutkoy,
+    imageSlider: [
+    { src: Arnavutkoy, alt: "Genel görünüm" },
+    { src: Karakoy, alt: "Toplantı odası" },
+    { src: Dolmabahce, alt: "Detay çekim" }
+  ]
   },
   {
     id:2,
@@ -21,6 +25,11 @@ const ProjectsData = [
       "Took their service to make last minute booking in Istanbul and Mr Mehmet was really helpful to help and the charge was quite reasonable (as compared online). Good advice given and visit was superb throughout!",
     name: "Ahmad Hashim Mahmood",
     src: Karakoy,
+    imageSlider: [
+    { src: Arnavutkoy, alt: "Genel görünüm" },
+    { src: Karakoy, alt: "Toplantı odası" },
+    { src: Dolmabahce, alt: "Detay çekim" }
+  ]
   },
   {
     id:3,
@@ -28,6 +37,11 @@ const ProjectsData = [
       "The service was perfect, Mrs. Mehmet was so patient and helpful, He helped us with a lot of things, it will not be the last time to deal with this company, Thank you for your service ☺️.",
     name: "Alanood Alkuwari",
     src: Dolmabahce,
+    imageSlider: [
+    { src: Arnavutkoy, alt: "Genel görünüm" },
+    { src: Karakoy, alt: "Toplantı odası" },
+    { src: Dolmabahce, alt: "Detay çekim" }
+  ]
   },
     {
       id:4,
@@ -35,6 +49,11 @@ const ProjectsData = [
       "Excellent from everyone with whom i deal for my first experience with Earthlight Travel Services. Insightful, responsive, patient, professional & helpful. I highly recommend their services.",
     name: "Syafi Naz",
     src: Arnavutkoy,
+    imageSlider: [
+    { src: Arnavutkoy, alt: "Genel görünüm" },
+    { src: Karakoy, alt: "Toplantı odası" },
+    { src: Dolmabahce, alt: "Detay çekim" }
+  ]
   },
   {
     id:5,
@@ -42,6 +61,11 @@ const ProjectsData = [
       "Took their service to make last minute booking in Istanbul and Mr Mehmet was really helpful to help and the charge was quite reasonable (as compared online). Good advice given and visit was superb throughout!",
     name: "Ahmad Hashim Mahmood",
     src: Karakoy,
+    imageSlider: [
+    { src: Arnavutkoy, alt: "Genel görünüm" },
+    { src: Karakoy, alt: "Toplantı odası" },
+    { src: Dolmabahce, alt: "Detay çekim" }
+  ]
   },
   {
     id:6,
@@ -49,6 +73,11 @@ const ProjectsData = [
       "The service was perfect, Mrs. Mehmet was so patient and helpful, He helped us with a lot of things, it will not be the last time to deal with this company, Thank you for your service ☺️.",
     name: "Alanood Alkuwari",
     src: Dolmabahce,
+    imageSlider: [
+    { src: Arnavutkoy, alt: "Genel görünüm" },
+    { src: Karakoy, alt: "Toplantı odası" },
+    { src: Dolmabahce, alt: "Detay çekim" }
+  ]
   },
     {
       id:7,
@@ -56,6 +85,11 @@ const ProjectsData = [
       "Excellent from everyone with whom i deal for my first experience with Earthlight Travel Services. Insightful, responsive, patient, professional & helpful. I highly recommend their services.",
     name: "Syafi Naz",
     src: Arnavutkoy,
+    imageSlider: [
+    { src: Arnavutkoy, alt: "Genel görünüm" },
+    { src: Karakoy, alt: "Toplantı odası" },
+    { src: Dolmabahce, alt: "Detay çekim" }
+  ]
   },
   {
     id:8,
@@ -63,6 +97,11 @@ const ProjectsData = [
       "Took their service to make last minute booking in Istanbul and Mr Mehmet was really helpful to help and the charge was quite reasonable (as compared online). Good advice given and visit was superb throughout!",
     name: "Ahmad Hashim Mahmood",
     src: Karakoy,
+    imageSlider: [
+    { src: Arnavutkoy, alt: "Genel görünüm" },
+    { src: Karakoy, alt: "Toplantı odası" },
+    { src: Dolmabahce, alt: "Detay çekim" }
+  ]
   },
   {
     id:9,
@@ -70,6 +109,11 @@ const ProjectsData = [
       "The service was perfect, Mrs. Mehmet was so patient and helpful, He helped us with a lot of things, it will not be the last time to deal with this company, Thank you for your service ☺️.",
     name: "Alanood Alkuwari",
     src: Dolmabahce,
+    imageSlider: [
+    { src: Arnavutkoy, alt: "Genel görünüm" },
+    { src: Karakoy, alt: "Toplantı odası" },
+    { src: Dolmabahce, alt: "Detay çekim" }
+  ]
   }
 ];
 
@@ -104,11 +148,12 @@ function ProjectsPage() {
 
       {ProjectsData.map((project) => {
         return (
-              <Link key={project.id} to={`/projects/${project.id}`} className="flex flex-row mb-20 md:ml-10" element={<TheProjectPage project={project}/>}>
+              <Link key={project.id} to={`/projects/${project.id}`} className="flex flex-row mb-20 md:ml-10">
                 <div className="shadow-md sm:w-96 w-72 md:w-[20rem] bg-[#FAFAFA]">
                   <div className="h-48 md:h-64 relative">
                     <img
                       src={project.src}
+                      alt={project.name}
                       className="w-full h-full object-cover"
                     />
                   </div>

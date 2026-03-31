@@ -25,7 +25,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<SerramentoMainPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/projects/:projectId" element={<TheProjectPage />}/>
+          <Route path="/projects/:id" element={<TheProjectPage />} />
         </Routes>
       </Suspense>
     </div>
