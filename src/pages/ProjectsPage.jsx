@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import SERRAMENTO_LOGO from "../images/Serramento/SERRAMENTO_LOGO.png";
 import Header2 from "../layout/Header2";
-import Karakoy from "../images/Feedback/Karakoy.jpeg";
-import Arnavutkoy from "../images/Feedback/Arnavutkoy.jpeg";
-import Dolmabahce from "../images/Feedback/Dolmabahce.jpeg";
+import Architecture from "../images/WhatWeOffer/Architecture.png";
+import Interior from "../images/WhatWeOffer/Interior.png";
+import ProjectManagement from "../images/WhatWeOffer/ProjectManagement.png";
 import { Link } from "react-router-dom";
 
 export const ProjectsData = [
@@ -12,11 +12,11 @@ export const ProjectsData = [
     comment:
       "Excellent from everyone with whom i deal for my first experience with Earthlight Travel Services. Insightful, responsive, patient, professional & helpful. I highly recommend their services.",
     name: "Syafi Naz",
-    src: Arnavutkoy,
+    src: Architecture,
     imageSlider: [
-    { src: Arnavutkoy, alt: "Genel görünüm" },
-    { src: Karakoy, alt: "Toplantı odası" },
-    { src: Dolmabahce, alt: "Detay çekim" }
+    { src: Architecture, alt: "Genel görünüm" },
+    { src: Interior, alt: "Toplantı odası" },
+    { src: ProjectManagement, alt: "Detay çekim" }
   ]
   },
   {
@@ -24,11 +24,11 @@ export const ProjectsData = [
     comment:
       "Took their service to make last minute booking in Istanbul and Mr Mehmet was really helpful to help and the charge was quite reasonable (as compared online). Good advice given and visit was superb throughout!",
     name: "Ahmad Hashim Mahmood",
-    src: Karakoy,
+    src: Interior,
     imageSlider: [
-    { src: Arnavutkoy, alt: "Genel görünüm" },
-    { src: Karakoy, alt: "Toplantı odası" },
-    { src: Dolmabahce, alt: "Detay çekim" }
+    { src: Architecture, alt: "Genel görünüm" },
+    { src: Interior, alt: "Toplantı odası" },
+    { src: ProjectManagement, alt: "Detay çekim" }
   ]
   },
   {
@@ -36,11 +36,11 @@ export const ProjectsData = [
     comment:
       "The service was perfect, Mrs. Mehmet was so patient and helpful, He helped us with a lot of things, it will not be the last time to deal with this company, Thank you for your service ☺️.",
     name: "Alanood Alkuwari",
-    src: Dolmabahce,
+    src: ProjectManagement,
     imageSlider: [
-    { src: Arnavutkoy, alt: "Genel görünüm" },
-    { src: Karakoy, alt: "Toplantı odası" },
-    { src: Dolmabahce, alt: "Detay çekim" }
+    { src: Architecture, alt: "Genel görünüm" },
+    { src: Interior, alt: "Toplantı odası" },
+    { src: ProjectManagement, alt: "Detay çekim" }
   ]
   },
     {
@@ -48,71 +48,11 @@ export const ProjectsData = [
     comment:
       "Excellent from everyone with whom i deal for my first experience with Earthlight Travel Services. Insightful, responsive, patient, professional & helpful. I highly recommend their services.",
     name: "Syafi Naz",
-    src: Arnavutkoy,
+    src: ProjectManagement,
     imageSlider: [
-    { src: Arnavutkoy, alt: "Genel görünüm" },
-    { src: Karakoy, alt: "Toplantı odası" },
-    { src: Dolmabahce, alt: "Detay çekim" }
-  ]
-  },
-  {
-    id:5,
-    comment:
-      "Took their service to make last minute booking in Istanbul and Mr Mehmet was really helpful to help and the charge was quite reasonable (as compared online). Good advice given and visit was superb throughout!",
-    name: "Ahmad Hashim Mahmood",
-    src: Karakoy,
-    imageSlider: [
-    { src: Arnavutkoy, alt: "Genel görünüm" },
-    { src: Karakoy, alt: "Toplantı odası" },
-    { src: Dolmabahce, alt: "Detay çekim" }
-  ]
-  },
-  {
-    id:6,
-    comment:
-      "The service was perfect, Mrs. Mehmet was so patient and helpful, He helped us with a lot of things, it will not be the last time to deal with this company, Thank you for your service ☺️.",
-    name: "Alanood Alkuwari",
-    src: Dolmabahce,
-    imageSlider: [
-    { src: Arnavutkoy, alt: "Genel görünüm" },
-    { src: Karakoy, alt: "Toplantı odası" },
-    { src: Dolmabahce, alt: "Detay çekim" }
-  ]
-  },
-    {
-      id:7,
-    comment:
-      "Excellent from everyone with whom i deal for my first experience with Earthlight Travel Services. Insightful, responsive, patient, professional & helpful. I highly recommend their services.",
-    name: "Syafi Naz",
-    src: Arnavutkoy,
-    imageSlider: [
-    { src: Arnavutkoy, alt: "Genel görünüm" },
-    { src: Karakoy, alt: "Toplantı odası" },
-    { src: Dolmabahce, alt: "Detay çekim" }
-  ]
-  },
-  {
-    id:8,
-    comment:
-      "Took their service to make last minute booking in Istanbul and Mr Mehmet was really helpful to help and the charge was quite reasonable (as compared online). Good advice given and visit was superb throughout!",
-    name: "Ahmad Hashim Mahmood",
-    src: Karakoy,
-    imageSlider: [
-    { src: Arnavutkoy, alt: "Genel görünüm" },
-    { src: Karakoy, alt: "Toplantı odası" },
-    { src: Dolmabahce, alt: "Detay çekim" }
-  ]
-  },
-  {
-    id:9,
-    comment:
-      "The service was perfect, Mrs. Mehmet was so patient and helpful, He helped us with a lot of things, it will not be the last time to deal with this company, Thank you for your service ☺️.",
-    name: "Alanood Alkuwari",
-    src: Dolmabahce,
-    imageSlider: [
-    { src: Arnavutkoy, alt: "Genel görünüm" },
-    { src: Karakoy, alt: "Toplantı odası" },
-    { src: Dolmabahce, alt: "Detay çekim" }
+    { src: Architecture, alt: "Genel görünüm" },
+    { src: Interior, alt: "Toplantı odası" },
+    { src: ProjectManagement, alt: "Detay çekim" }
   ]
   }
 ];

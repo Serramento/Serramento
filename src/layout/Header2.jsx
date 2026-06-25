@@ -10,7 +10,7 @@ export default function Header2(props) {
     <div className="" ref={props.homeRef}>
       {/* Navbar */}
       <section className="w-screen">
-        <nav className="fixed w-full top-0 left-0 bg-white/10 backdrop-blur-md z-50">
+        <nav className="fixed w-full top-0 left-0 bg-[#1E2328]/10 backdrop-blur-md z-50">
           <div className="px-4 md:px-20">
             <div className="flex justify-between h-28">
               <div className="flex items-center">
@@ -25,26 +25,26 @@ export default function Header2(props) {
                   <ul className="flex flex-row justify-between w-[28rem]">
                     <li>
                       <Link to="/">
-                        <div className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#FFFFFF] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+                        <div className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#A37A55] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
                           {props.info.home}
                         </div>
                       </Link>
                     </li>
                     <li>
                       <Link to="/" >
-                        <div className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#FFFFFF] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+                        <div className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#A37A55] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
                           {props.info.aboutUs}
                         </div>
                       </Link>
                     </li>
                     <li>
-                        <Link to="/projects" className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#FFFFFF] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+                        <Link to="/projects" className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#A37A55] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
                           {props.info.services}
                         </Link>
                     </li>
                     <li>
                       <Link to="/">
-                        <div className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#FFFFFF] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+                        <div className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#A37A55] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
                           {props.info.contact}
                         </div>
                       </Link>
@@ -74,18 +74,18 @@ export default function Header2(props) {
           {isOpen && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50">
+                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#98B8DF] hover:bg-gray-50">
                   {props.info.home}
                 </Link>
-                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50">
+                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#98B8DF] hover:bg-gray-50">
                   {props.info.aboutUs}
                 </Link>
                 <Link to="/projects"
-                  className="block px-3 py-2 rounded-md text-left font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"                  
+                  className="block px-3 py-2 rounded-md text-left font-medium text-[#A37A55] hover:text-[#98B8DF] hover:bg-gray-50"                  
                 >
                   {props.info.services}
                 </Link>
-                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50">
+                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#98B8DF] hover:bg-gray-50">
                   {props.info.contact}
                 </Link>
               </div>

@@ -20,7 +20,7 @@ const InstagramContent = (props) => {
         </div>
 
         <div className="m-7 text-left">
-          <h4 className="text-xl font-semibold mt-3 text-[#98B8DF]">
+          <h4 className="text-xl font-semibold mt-3 text-[#A37A55]">
             {props.post.title}
           </h4>
           <p className="text-[#C0BABA] text-sm font-semibold text-left mt-3">

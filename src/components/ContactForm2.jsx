@@ -130,7 +130,7 @@ export default function ContactForm2() {
 
           <div className="form-line">
             <button
-              className="text-white bg-[#98B8DF] md:ml-80 mb-10 px-10 py-3 font-semibold"
+              className="text-white bg-[#A37A55] md:ml-80 mb-10 px-10 py-3 font-semibold"
               type="submit"
               disabled={!isValid}
             >

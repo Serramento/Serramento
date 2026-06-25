@@ -28,7 +28,7 @@ const ImageSlider = (props) => {
     <FontAwesomeIcon
       icon={direction === "left" ? faChevronLeft : faChevronRight}
       size="xl"
-      className="text-[#737373] hover:text-white bg-[#98B8DF] p-6 rounded-full mr-5"
+      className="text-[#A37A55] hover:text-white mr-5"
       onClick={handleClick}
     />
   );
@@ -47,7 +47,7 @@ const ImageSlider = (props) => {
                 <div className="w-72 mt-5 md:w-[26rem] md:mr-10 md:text-left md:mt-10">
                   <h5 className={props.css}>{props.title}</h5>
                   <div className={props.css2}>
-                    <h2 className="text-3xl md:text-5xl font-bold text-[#39405A] italic">
+                    <h2 className="text-3xl md:text-5xl font-bold text-[#D8D3CB] italic">
                       {slide.title}
                     </h2>
                     <h4 className="mt-4 text-lg text-[#C0BABA]">

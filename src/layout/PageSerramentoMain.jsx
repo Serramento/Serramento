@@ -4,65 +4,63 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Kayan1 from "../images/KayanFotolar/Kayan1.jpeg";
-import Kayan2 from "../images/KayanFotolar/Kayan2.jpeg";
-import Kayan3 from "../images/KayanFotolar/Kayan3.jpeg";
-import Kayan4 from "../images/KayanFotolar/Kayan4.jpeg";
-import Kayan5 from "../images/KayanFotolar/Kayan5.jpeg";
-import Kayan7 from "../images/KayanFotolar/Kayan7.jpeg";
-import Kayan8 from "../images/KayanFotolar/Kayan8.jpeg";
-import Kayan9 from "../images/KayanFotolar/Kayan9.jpeg";
-import Kayan10 from "../images/KayanFotolar/Kayan10.jpeg";
-import Kayan11 from "../images/KayanFotolar/Kayan11.jpeg";
+import Kayan1 from "../images/KayanFotolar/Kayan1.png";
+import Kayan2 from "../images/KayanFotolar/Kayan2.png";
+import Kayan3 from "../images/KayanFotolar/Kayan3.png";
+import Kayan4 from "../images/KayanFotolar/Kayan4.png";
+import Kayan5 from "../images/KayanFotolar/Kayan5.png";
+import Kayan7 from "../images/KayanFotolar/Kayan7.png";
+import Kayan8 from "../images/KayanFotolar/Kayan8.png";
+import Kayan9 from "../images/KayanFotolar/Kayan9.png";
+import Kayan10 from "../images/KayanFotolar/Kayan10.png";
+import Kayan11 from "../images/KayanFotolar/Kayan11.png";
 import InstagramContent from "../components/InstagramContent";
 import ImageSlider from "../components/ImageSlider";
-import FamilyVacation from "../images/WhatWeOffer/FamilyVacation.jpeg";
-import ArtCulture from "../images/WhatWeOffer/ArtCulture.jpeg";
-import ConciergeServices from "../images/WhatWeOffer/ConciergeServices.jpeg";
+import Architecture from "../images/WhatWeOffer/Architecture.png";
+import Interior from "../images/WhatWeOffer/Interior.png";
+import ProjectManagement from "../images/WhatWeOffer/ProjectManagement.png";
 import ContactForm2 from "../components/ContactForm2";
-import FotoMehmetGuray from "../images/WhoWeAre/FotoMehmetGuray.jpeg";
-import FotoMehmet from "../images/WhoWeAre/FotoMehmet.png";
-import FotoGuray from "../images/WhoWeAre/FotoGuray.png";
+import SERRA from "../images/Serramento/SERRA.jpeg";
 
 const InstagramData = [
   {
-    title: "Grozni Cami Mimari",
+    title: "Grozni Mosque",
     description:
-      "Konsept Mimari Cami Projemiz...",
+      "Concept Architectural Design",
     href: "https://www.instagram.com/p/B72zBStHXXY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
   {
-    title: "Ekincik Villa Mimari",
+    title: "Ekincik Villa",
     description:
-      "Mimari Konut Tasarımımız...",
+      "Architectural Housing Project",
     href: "https://www.instagram.com/p/B7A7y1THROm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
   {
-    title: "İncesu Villa İç Mimari",
+    title: "Incesu Villa",
     description:
-      "İç Mimari Konut Tasarımımız...",
+      "Interior Residential Design",
     href: "https://www.instagram.com/p/CQLKFXkHd-K/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
 ];
 
 const imageSliderData = [
   {
-    title: "Family Vacations",
+    title: "Architecture",
     description:
-      "Family vacations are ideal to get together and spend some quality of time together with the other family members. We would like you to leave your family traveling arrangements to hands of our experienced team members who will create extraordinary travel experiences will exceed everyone’s expectations.",
-    src: FamilyVacation,
+      "Thoughtfully designed spaces that combine functionality, context, and timeless aesthetics.",
+    src: Architecture,
   },
   {
-    title: "Concierge Services",
+    title: "Interior Design",
     description:
-      "Our luxury concierge services is operated by huge network of trusted global suppliers in order to provide you the best solutions as well as bespoke travel experiences. Arranging a restaurant reservation, luxurious car service or even a helicopter tour&transfer is only a phone call or text away.",
-    src: ConciergeServices,
+      "Refined interior environments shaped through materiality, detail, and user experience.",
+    src: Interior,
   },
   {
-    title: "Arts& Culture& History",
+    title: "Project Management",
     description:
-      "Our approach to historic and cultural places is private custom tours. All of these tours are individually guided with small groups of people. All our unique itineraries are handcrafted by our professional team and you will have a memorable experience from the moment your are greeted by your guide until you return to your hotel.",
-    src: ArtCulture,
+      "Comprehensive coordination from concept to completion, ensuring quality and efficiency throughout the process.",
+    src: ProjectManagement,
   },
 ];
 
@@ -76,11 +74,11 @@ export default function PageSerramentoMain(props) {
       >
         <div className="px-7 md:px-36 ">
           <div className="text-center px-4 pb-12 py-20 md:pb-24 bg-white md:bg-[#FAFAFA]">
-            <h5 className="text-lg font-bold pb-3 text-[#98B8DF] md:text-center">
+            <h5 className="text-lg font-bold pb-3 text-[#A37A55] md:text-center">
               ABOUT US
             </h5>
             <p className="mt-4 text-lg text-[#C0BABA] md:px-24">
-              We continue to work in the fields of architectural design, construction projects, 3d visuals and project management in our Serramento Architecture office, which we established in 2016. <br />​ We strive to create original, aesthetically pleasing, and functional project designs. We are here to advise you throughout every aspect of your project management process.
+              Founded by Serra Hancıoğlu, Serramento Architecture is a design studio dedicated to creating thoughtful, timeless, and functional spaces. <br/>We believe that every project is a unique opportunity to transform ideas into meaningful environments. By combining creativity, technical precision, and a deep understanding of our clients' needs, we develop architectural and interior design solutions that balance aesthetics, functionality, and long-term value.<br/>Our work spans residential, commercial, and institutional projects, with a commitment to delivering tailored designs that respond to both context and purpose. From concept development to project execution, we approach every stage with attention to detail, clarity, and professionalism.<br/>At Serramento Architecture, we see design as more than the creation of spaces—it is the creation of experiences that enrich everyday life.
             </p>
           </div>
         </div>
@@ -144,34 +142,37 @@ export default function PageSerramentoMain(props) {
           <ImageSlider
             imageSliderData={imageSliderData}
             title="SERVICES"
-            css="text-lg font-bold mt-12 md:mt-0 text-[#98B8DF] mb-3 md:ml-10"
+            css="text-lg font-bold mt-12 md:mt-0 text-[#A37A55] mb-3 md:ml-10"
             css2="flex flex-col h-96 md:items-left"
           />
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-[#98B8DF] w-screen">
+      <section className="bg-[#D8D3CB] w-screen">
         <div className="md:flex md:flex-row md:items-center md:justify-center">
           <img
-            src={FotoMehmetGuray}
-            alt="MehmetGuray"
+            src={SERRA}
+            alt="Serra"
             className="md:h-[34rem] object-contain"
           />
-          <div className="md:mr-20">
-            <h5 className="text-lg font-bold pb-3 text-[#FFFFFF] pt-10">
+          <div className="w-96 md:mr-20">
+            <h5 className="text-lg font-bold pb-3 text-[#A37A55] pt-10">
               WHY CHOOSE US?
             </h5>
-            <div className="text-md font-semibold md:mx-10 text-[#FFFFFF] md:mt-2 px-5 sm:px-8 pb-10 sm:pb-16 md:px-0 text-left">
-              • Professional, dedicated and passionate travel advisors have an
-              extensive background in luxury hotel industry
+            <div className="text-md font-semibold md:mx-10 text-[#A37A55] md:mt-2 px-5 sm:px-8 pb-10 sm:pb-16 md:px-0 text-left">
+              • Tailored Design<br />
+              Every project is developed around its unique context, requirements, and aspirations.
               <br />
-              ​• Personalised and exclusive service
+              ​• Attention to Detail<br />
+              We believe that exceptional spaces are defined by thoughtful details and precise execution.
               <br />
-              • 7/24 reachable and flexible team
+              • End-to-End Involvement<br />
+              From concept design to project completion, we remain actively engaged throughout the process.
               <br />
-              • Great connections with luxury hotel chains worldwide
-              <br />• Attention to each and every single details
+              • Timeless Approach<br />
+              We create spaces that prioritize longevity, functionality, and lasting aesthetic value.
+
             </div>
           </div>
         </div>
@@ -181,7 +182,7 @@ export default function PageSerramentoMain(props) {
       <section className="py-20 flex w-screen">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-3">
-            <h2 className="text-lg font-bold mb-3 text-[#98B8DF]">FOLLOW US</h2>
+            <h2 className="text-lg font-bold mb-3 text-[#A37A55]">FOLLOW US</h2>
           </div>
           <div className="md:hidden flex flex-col items-center justify-center md:flex-row">
             {InstagramData.slice(0, 2).map((post, index) => (
@@ -210,7 +211,7 @@ export default function PageSerramentoMain(props) {
         ref={props.contactRef}
       >
         <div className="hidden md:flex flex-col mt-40 bottom-0">
-          <h2 className="text-lg font-bold text-[#98B8DF] -rotate-90">
+          <h2 className="text-lg font-bold text-[#A37A55] -rotate-90">
             CONTACT US
           </h2>
         </div>
