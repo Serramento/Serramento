@@ -40,11 +40,7 @@ const ImageSlider = (props) => {
           <div key={index}>
             {index === current && (
               <div className="flex flex-col justify-center items-center md:flex-row">
-                <div className="hidden md:flex ml-5 mt-24 md:mt-0 md:ml-0 md:-rotate-90">
-                  <ArrowButton direction="left" handleClick={prevSlide} />
-                  <ArrowButton direction="right" handleClick={nextSlide} />
-                </div>
-                <div className="w-72 mt-5 md:w-[26rem] md:mr-10 md:text-left md:mt-10">
+                <div className="w-60 mt-5 md:w-[26rem] md:mr-10 md:text-left md:mt-10">
                   <h5 className={props.css}>{props.title}</h5>
                   <div className={props.css2}>
                     <h2 className="text-3xl md:text-5xl font-bold text-[#D8D3CB] italic">
@@ -54,10 +50,10 @@ const ImageSlider = (props) => {
                       {slide.description}
                     </h4>
                   </div>
-                </div>
-                <div className="md:hidden ml-5 mb-3">
+                  <div className="ml-5 mb-6">
                   <ArrowButton direction="left" handleClick={prevSlide} />
                   <ArrowButton direction="right" handleClick={nextSlide} />
+                </div>
                 </div>
                 <div className="h-[15rem] w-[15rem] md:h-[18rem] md:w-[18rem] mb-20 md:mb-10 md:mt-20">
                   <img

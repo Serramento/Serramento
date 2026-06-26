@@ -20,7 +20,7 @@ import Architecture from "../images/WhatWeOffer/Architecture.png";
 import Interior from "../images/WhatWeOffer/Interior.png";
 import ProjectManagement from "../images/WhatWeOffer/ProjectManagement.png";
 import ContactForm2 from "../components/ContactForm2";
-import SERRA from "../images/Serramento/SERRA.jpeg";
+import SERRA from "../images/WhoWeAre/SERRA.jpeg";
 
 const InstagramData = [
   {
@@ -78,7 +78,7 @@ export default function PageSerramentoMain(props) {
               ABOUT US
             </h5>
             <p className="mt-4 text-lg text-[#C0BABA] md:px-24">
-              Founded by Serra Hancıoğlu, Serramento Architecture is a design studio dedicated to creating thoughtful, timeless, and functional spaces. <br/>We believe that every project is a unique opportunity to transform ideas into meaningful environments. By combining creativity, technical precision, and a deep understanding of our clients' needs, we develop architectural and interior design solutions that balance aesthetics, functionality, and long-term value.<br/>Our work spans residential, commercial, and institutional projects, with a commitment to delivering tailored designs that respond to both context and purpose. From concept development to project execution, we approach every stage with attention to detail, clarity, and professionalism.<br/>At Serramento Architecture, we see design as more than the creation of spaces—it is the creation of experiences that enrich everyday life.
+              Founded by Serra Hancıoğlu in 2016, Serramento Architecture is a design studio dedicated to creating thoughtful, timeless, and functional spaces. We believe that every project is a unique opportunity to transform ideas into meaningful environments. By combining creativity, technical precision, and a deep understanding of our clients' needs, we develop architectural and interior design solutions that balance aesthetics, functionality, and long-term value.Our work spans residential, commercial, and institutional projects, with a commitment to delivering tailored designs that respond to both context and purpose. From concept development to project execution, we approach every stage with attention to detail, clarity, and professionalism. At Serramento Architecture, we see design as more than the creation of spaces—it is the creation of experiences that enrich everyday life.
             </p>
           </div>
         </div>
@@ -142,8 +142,8 @@ export default function PageSerramentoMain(props) {
           <ImageSlider
             imageSliderData={imageSliderData}
             title="SERVICES"
-            css="text-lg font-bold mt-12 md:mt-0 text-[#A37A55] mb-3 md:ml-10"
-            css2="flex flex-col h-96 md:items-left"
+            css="text-lg font-bold mt-12 text-[#A37A55] mb-3"
+            css2="flex flex-col h-60 md:items-left"
           />
         </div>
       </section>
@@ -154,9 +154,9 @@ export default function PageSerramentoMain(props) {
           <img
             src={SERRA}
             alt="Serra"
-            className="md:h-[34rem] object-contain"
+            className="md:h-[20rem] object-contain"
           />
-          <div className="w-96 md:mr-20">
+          <div className="sm:w-[20rem] md:w-[32rem]">
             <h5 className="text-lg font-bold pb-3 text-[#A37A55] pt-10">
               WHY CHOOSE US?
             </h5>
@@ -172,7 +172,6 @@ export default function PageSerramentoMain(props) {
               <br />
               • Timeless Approach<br />
               We create spaces that prioritize longevity, functionality, and lasting aesthetic value.
-
             </div>
           </div>
         </div>

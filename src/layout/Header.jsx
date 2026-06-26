@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import INCESU from "../images/Serramento/INCESU.png";
 import ATAKUM from "../images/Serramento/ATAKUM.png";
+import NILUFER1 from "../images/Serramento/NILUFER1.png";
 import { Link } from "react-router-dom";
 
 const ImageSliderData2 = [
@@ -12,6 +13,11 @@ const ImageSliderData2 = [
     title: "Incesu Summer House Project",
     src: INCESU,
     alt: "INCESU",
+  },
+  {
+    title: "Nilufer Villa Design",
+    src: NILUFER1,
+    alt: "NILUFER1",
   },
   {
     title: "Atakum Interior Housing Project",
@@ -103,7 +109,7 @@ export default function Header(props) {
               <div className="md:hidden flex items-center">
                 <button
                   onClick={() => setIsOpen(!isOpen)}
-                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+                  className="inline-flex items-center justify-center p-2 rounded-md text-[#A37A55] hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
                 >
                   <span className="sr-only">Open main menu</span>
                   {isOpen ? (
@@ -121,7 +127,7 @@ export default function Header(props) {
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <button
-                  className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#C0BABA] hover:bg-gray-50"
                   onClick={() =>
                     window.scrollTo({
                       top: props.homeRef.current.offsetTop,
@@ -132,7 +138,7 @@ export default function Header(props) {
                   {props.info.home}
                 </button>
                 <button
-                  className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#C0BABA] hover:bg-gray-50"
                   onClick={() =>
                     window.scrollTo({
                       top: props.aboutUsRef.current.offsetTop,
@@ -143,12 +149,12 @@ export default function Header(props) {
                   {props.info.aboutUs}
                 </button>
                 <Link to="/projects"
-                  className="block px-3 py-2 rounded-md text-left font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"                  
+                  className="block px-3 py-2 rounded-md text-left font-medium text-[#A37A55] hover:text-[#C0BABA] hover:bg-gray-50"                  
                 >
                   {props.info.services}
                 </Link>
                 <button
-                  className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#C0BABA] hover:bg-gray-50"
                   onClick={() =>
                     window.scrollTo({
                       top: props.contactRef.current.offsetTop,
@@ -168,7 +174,7 @@ export default function Header(props) {
       <section className="relative w-screen h-screen md:h-[46rem]">
                 <Suspense
                   fallback={
-                    <div className="bg-[#98B8DF] w-screen h-screen flex justify-center items-center text-[#FFFFFF] font-montserrat text-3xl">
+                    <div className="bg-[#A37A55] w-screen h-screen flex justify-center items-center text-[#FFFFFF] font-montserrat text-3xl">
                       <FontAwesomeIcon icon={faSpinner} className="animate-spin mr-3" />
                       Loading...
                     </div>

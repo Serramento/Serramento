@@ -24,8 +24,8 @@ const ImageSlider2 = (props) => {
   const ArrowButton = ({ direction, handleClick }) => (
     <FontAwesomeIcon
       icon={direction === "left" ? faChevronLeft : faChevronRight}
-      size="2xl"
-      className="text-[#A37A55] hover:text-[#D8D3CB] opacity-75"
+      size="3x"
+      className="text-[#A37A55] hover:text-[#D8D3CB] mt-36 opacity-75"
       onClick={handleClick}
     />
   );

@@ -74,18 +74,18 @@ export default function Header2(props) {
           {isOpen && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#98B8DF] hover:bg-gray-50">
+                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#C0BABA] hover:bg-gray-50">
                   {props.info.home}
                 </Link>
-                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#98B8DF] hover:bg-gray-50">
+                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#C0BABA] hover:bg-gray-50">
                   {props.info.aboutUs}
                 </Link>
                 <Link to="/projects"
-                  className="block px-3 py-2 rounded-md text-left font-medium text-[#A37A55] hover:text-[#98B8DF] hover:bg-gray-50"                  
+                  className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#C0BABA] hover:bg-gray-50"                  
                 >
                   {props.info.services}
                 </Link>
-                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#98B8DF] hover:bg-gray-50">
+                <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-[#A37A55] hover:text-[#C0BABA] hover:bg-gray-50">
                   {props.info.contact}
                 </Link>
               </div>

@@ -80,12 +80,13 @@ function TheProjectPage() {
                 <img
                   src={project.src}
                   alt={project.alt}
-                  className="md:w-[90rem] md:h-[40rem] w-full h-full object-cover"
+                  className="md:w-[70rem] md:h-[40rem] w-full h-full object-cover"
                 />
               </div>
             )}
           </div>
         ))}
+        <div>{project.comment}</div>
       </section>
     </div>
   );
