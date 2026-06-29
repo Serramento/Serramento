@@ -149,18 +149,18 @@ export default function PageSerramentoMain(props) {
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-[#D8D3CB] w-screen">
-        <div className="md:flex md:flex-row md:items-center md:justify-center">
+      <section className="w-screen bg-[#D8D3CB]">
+        <div className="md:flex md:flex-row items-center justify-center">
           <img
             src={SERRA}
             alt="Serra"
-            className="md:h-[20rem] object-contain"
+            className="h-[23rem] sm:pl-10 sm:pt-10 md:pl-0 md:pt-0 md:pr-16"
           />
-          <div className="sm:w-[20rem] md:w-[32rem]">
-            <h5 className="text-lg font-bold pb-3 text-[#A37A55] pt-10">
+          <div className="mx-10 text-left sm:py-10 py-16">
+            <h5 className="text-lg font-semibold pb-3 text-[#A37A55]">
               WHY CHOOSE US?
             </h5>
-            <div className="text-md font-semibold md:mx-10 text-[#A37A55] md:mt-2 px-5 sm:px-8 pb-10 sm:pb-16 md:px-0 text-left">
+            <div className="text-md text-[#A37A55]">
               • Tailored Design<br />
               Every project is developed around its unique context, requirements, and aspirations.
               <br />
@@ -178,12 +178,12 @@ export default function PageSerramentoMain(props) {
       </section>
 
       {/* Instagram Posts */}
-      <section className="py-20 flex w-screen">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-3">
-            <h2 className="text-lg font-bold mb-3 text-[#A37A55]">FOLLOW US</h2>
+      <section className="py-16 flex w-screen">
+        <div className="mx-auto px-4 sm:px-6">
+          <div className="text-center mb-6">
+            <h2 className="text-lg font-bold mb-3 md:mb-6 text-[#A37A55]">FOLLOW US</h2>
           </div>
-          <div className="md:hidden flex flex-col items-center justify-center md:flex-row">
+          <div className="md:hidden flex flex-col items-center justify-center">
             {InstagramData.slice(0, 2).map((post, index) => (
               <InstagramContent
                 key={index}
@@ -192,7 +192,7 @@ export default function PageSerramentoMain(props) {
               />
             ))}
           </div>
-          <div className="hidden md:flex flex-row items-center justify-center">
+          <div className="hidden md:flex md:flex-row md:items-center md:justify-center">
             {InstagramData.slice(0, 3).map((post, index) => (
               <InstagramContent
                 key={index}
@@ -206,19 +206,15 @@ export default function PageSerramentoMain(props) {
 
       {/* Contact Form */}
       <section
-        className="flex flex-col md:flex-row items-center justify-center w-screen md:ml-0.5"
+        className="flex flex-col items-center justify-center w-screen md:ml-0.5"
         ref={props.contactRef}
       >
-        <div className="hidden md:flex flex-col mt-40 bottom-0">
-          <h2 className="text-lg font-bold text-[#A37A55] -rotate-90">
+        <div className="flex flex-col bottom-0">
+          <h2 className="text-lg font-bold text-[#A37A55]">
             CONTACT US
           </h2>
         </div>
         <ContactForm2 />
-        <h2 className="md:hidden mb-3 text-lg font-bold text-[#98B8DF]">
-          CONTACT US
-        </h2>
-        <div className="md:hidden vertical-line2"></div>
       </section>
     </div>
   );

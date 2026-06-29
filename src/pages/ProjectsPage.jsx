@@ -225,7 +225,7 @@ function ProjectsPage() {
     turkiye: "TURKIYE",
   };
   return (
-    <div className="font-lato">
+    <div className="font-lato w-screen">
         <Header2
           homeRef={homeRef}
           aboutUsRef={aboutUsRef}
@@ -233,11 +233,11 @@ function ProjectsPage() {
           contactRef={contactRef}
           info={info}
         />
-      <section className="flex flex-wrap m-20 justify-between items-center">
+      <section className="flex flex-wrap mt-36 m-3 justify-center items-center">
 
       {ProjectsData.map((project) => {
         return (
-              <Link key={project.id} to={`/projects/${project.id}`} className="flex flex-row mb-20 md:ml-10">
+              <Link key={project.id} to={`/projects/${project.id}`} className="flex flex-row mb-10 md:ml-10">
                 <div className="shadow-md sm:w-96 w-72 md:w-[20rem] bg-[#FAFAFA]">
                   <div className="h-48 md:h-64 relative">
                     <img
@@ -246,8 +246,8 @@ function ProjectsPage() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="m-7 text-left sm:h-[3rem] h-[3rem] md:h-10 flex flex-col justify-between">
-                    <p className="text-[#C0BABA] text-sm font-semibold text-left mt-3">
+                  <div className="text-left sm:h-[3rem] md:h-20 flex flex-col justify-center">
+                    <p className="text-[#A37A55] text-sm font-semibold text-left m-3">
                       {project.name}
                     </p>
                   </div>

@@ -16,7 +16,7 @@ function App() {
     <div className="font-lato">
       <Suspense
         fallback={
-          <div className="bg-[#98B8DF] w-screen h-screen flex justify-center items-center text-[#FFFFFF] font-montserrat text-3xl">
+          <div className="bg-[#A37A55] w-screen h-screen flex justify-center items-center text-[#FFFFFF] font-montserrat text-3xl">
             <FontAwesomeIcon icon={faSpinner} className="animate-spin mr-3" />
             Loading...
           </div>

@@ -26,9 +26,9 @@ export default function ContactForm2() {
       message: data.message,
     };
 
-    const serviceId = "service_d1tn7wn";
-    const templateId = "template_2xx1nt5";
-    const publicKey = "nxO2Y4RWqs89VH9kH";
+    const serviceId = "service_w1g52pg";
+    const templateId = "template_li30pkh";
+    const publicKey = "VyviBzZuCDBiBrJvB";
 
     emailjs
       .send(serviceId, templateId, sentData, {
@@ -66,7 +66,7 @@ export default function ContactForm2() {
         onSubmit={handleSubmit(submitHandler)}
       >
         <div>
-          <div className="mt-24 mb-8">
+          <div className="mt-8 mb-8">
             <input
               className="sm:w-80 w-72 md:w-[28rem] h-16 pl-5 bg-[#F9F9F9] border-[2px] border-[#E6E6E6] rounded-xl placeholder-[#737373] "
               placeholder="Name*"
@@ -115,7 +115,7 @@ export default function ContactForm2() {
           </div>
         </div>
 
-        <div className="md:mt-24 md:ml-10">
+        <div className="md:mt-8 md:ml-10">
           <div className="mb-8">
             <textarea
               className="sm:w-80 w-72 pt-4 md:w-[28rem] h-48 md:h-64 pl-5 bg-[#F9F9F9] border-[2px] border-[#E6E6E6] rounded-xl placeholder-[#737373] "
