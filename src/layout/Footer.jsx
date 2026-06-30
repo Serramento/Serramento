@@ -51,7 +51,7 @@ export default function Footer(props) {
                 </li>
               </div>
             </ul>
-            <ul className="space-y-2 text-white md:space-y-4 sm:mt-6 md:mt-0">
+            <ul className="space-y-2 text-white sm:mt-6 md:mt-0">
               <div className="flex flex-row w-64">
                 <li>İstanbul Görüşme Ofisi (Randevu ile)</li>
               </div>
